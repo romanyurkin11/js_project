@@ -37,3 +37,14 @@ switch (num) {
         console.log('Не в этот раз!');
         break;
 }
+
+
+// Метки в JS
+label:
+    for (let i = 0; i < 10; i++) {
+        if (i == 5) {
+            break label;
+        }
+        console.log(i);
+    }
+    // Этот код будет печатать числа от 0 до 4, но не будет печатать 5.
