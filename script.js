@@ -96,3 +96,37 @@
 // let { country, postalCode } = person.address; //Destructure
 // console.log(country);
 // console.log(postalCode);
+
+
+const obj = {
+    a: 5,
+    b: 1,
+    c: {
+        car: 'Honda',
+        color: 'black'
+    }
+};
+
+// Function of making copy of simple object 
+function makeCopySimpleObj(item) {
+    const newObj = {};
+
+    for (let key in item) {
+        newObj[key] = item[key];
+    }
+
+    return newObj;
+}
+
+
+// Function of making copy of heavy object 
+function makeCopyHeavyObj(item) {
+    const newObj = Object.assign({}, item);
+
+    return newObj;
+}
+
+let newArr = makeCopyHeavyObj(obj);
+console.log(obj);
+newArr.c.car = 'Odyssey'
+console.log(newArr);
