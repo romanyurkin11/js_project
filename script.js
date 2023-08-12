@@ -82,17 +82,17 @@
 // console.log(parseFloat(variable));
 
 
-const person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 30,
-    address: {
-        city: "New York",
-        country: "USA",
-        postalCode: "10001"
-    }
-};
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 30,
+//     address: {
+//         city: "New York",
+//         country: "USA",
+//         postalCode: "10001"
+//     }
+// };
 
-let { country, postalCode } = person.address; //Destructure
-console.log(country);
-console.log(postalCode);
+// let { country, postalCode } = person.address; //Destructure
+// console.log(country);
+// console.log(postalCode);
