@@ -131,11 +131,17 @@
 // newArr.c.car = 'Odyssey'
 // console.log(newArr);
 
-arr = [1, 2, 65, 43, 99];
+// arr = [1, 2, 65, 43, 99];
 
-// Method of creating the copy of array
-cloneArrFirst = arr.slice();
-cloneArrFirst[4] = 100;
-cloneArrFirst[1] = 60;
+// // Method of creating the copy of array
+// cloneArrFirst = arr.slice();
+// cloneArrFirst[4] = 100;
+// cloneArrFirst[1] = 60;
+// console.log(arr);
+// console.log(cloneArrFirst);
+
+arr = [1, 3, 6, 8, 10];
+newArr = [...arr, 2]; // Created the copy of array by spread operator
+newArr[2] = 16;
 console.log(arr);
-console.log(cloneArrFirst);
+console.log(newArr);
