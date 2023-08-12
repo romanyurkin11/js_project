@@ -98,35 +98,44 @@
 // console.log(postalCode);
 
 
-const obj = {
-    a: 5,
-    b: 1,
-    c: {
-        car: 'Honda',
-        color: 'black'
-    }
-};
+// const obj = {
+//     a: 5,
+//     b: 1,
+//     c: {
+//         car: 'Honda',
+//         color: 'black'
+//     }
+// };
 
-// Function of making copy of simple object 
-function makeCopySimpleObj(item) {
-    const newObj = {};
+// // Function of making copy of simple object 
+// function makeCopySimpleObj(item) {
+//     const newObj = {};
 
-    for (let key in item) {
-        newObj[key] = item[key];
-    }
+//     for (let key in item) {
+//         newObj[key] = item[key];
+//     }
 
-    return newObj;
-}
+//     return newObj;
+// }
 
 
-// Function of making copy of heavy object 
-function makeCopyHeavyObj(item) {
-    const newObj = Object.assign({}, item);
+// // Function of making copy of heavy object 
+// function makeCopyHeavyObj(item) {
+//     const newObj = Object.assign({}, item);
 
-    return newObj;
-}
+//     return newObj;
+// }
 
-let newArr = makeCopyHeavyObj(obj);
-console.log(obj);
-newArr.c.car = 'Odyssey'
-console.log(newArr);
+// let newArr = makeCopyHeavyObj(obj);
+// console.log(obj);
+// newArr.c.car = 'Odyssey'
+// console.log(newArr);
+
+arr = [1, 2, 65, 43, 99];
+
+// Method of creating the copy of array
+cloneArrFirst = arr.slice();
+cloneArrFirst[4] = 100;
+cloneArrFirst[1] = 60;
+console.log(arr);
+console.log(cloneArrFirst);
