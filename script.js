@@ -140,8 +140,8 @@
 // console.log(arr);
 // console.log(cloneArrFirst);
 
-arr = [1, 3, 6, 8, 10];
-newArr = [...arr, 2]; // Created the copy of array by spread operator
-newArr[2] = 16;
-console.log(arr);
-console.log(newArr);
+// arr = [1, 3, 6, 8, 10];
+// newArr = [...arr, 2]; // Created the copy of array by spread operator
+// newArr[2] = 16;
+// console.log(arr);
+// console.log(newArr);
